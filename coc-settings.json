@@ -1,0 +1,20 @@
+{
+	"languageserver": {
+		"metals": {
+			"command": "metals-vim.bat",
+			"rootPatterns": [
+				"build.sbt"
+			],
+			"filetypes": [
+				"scala",
+				"sbt"
+			]
+		}
+	},
+	"java.import.maven.enabled": true,
+	"java.completion.overwrite": false,
+	"java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:c:/Users/evang/binaries/lombok.jar -Xbootclasspath/a:c:/Users/evang/binaries/lombok.jar",
+	"java.format.onType.enabled": true,
+	"java.completion.guessMethodArguments": true,
+	"java.codeGeneration.useBlocks": true
+}

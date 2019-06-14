@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='C:/Users/evang/AppData/Local/nvim/plugins'
+let g:netrw_dirhist_2='C:\Users\evang\scoop\apps\neovim\current\Neovim\bin/platforms'
