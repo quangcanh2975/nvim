@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='C:/Users/evang/AppData/Local/nvim/plugins'
-let g:netrw_dirhist_2='C:\Users\evang\scoop\apps\neovim\current\Neovim\bin/platforms'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='C:/Users/evang/workspace/work/gic'
+let g:netrw_dirhist_2='C:/Users/evang/workspace/work/gic/src'
+let g:netrw_dirhist_3='C:/Users/evang/workspace/work/gic/src/main'
+let g:netrw_dirhist_4='C:/Users/evang/workspace/work/gic/src/main/java'
+let g:netrw_dirhist_5='C:/Users/evang/workspace/work/gic/src/main/java/br'
+let g:netrw_dirhist_6='C:/Users/evang/workspace/work/gic/src/main/java/br/com'
+let g:netrw_dirhist_7='C:/Users/evang/workspace/work/gic/src/main/java/br/com/codedata'
+let g:netrw_dirhist_8='C:/Users/evang/workspace/work/gic/src/main/java/br/com/codedata/gic'

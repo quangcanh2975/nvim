@@ -9,8 +9,14 @@
 				"scala",
 				"sbt"
 			]
+		},
+		"elixir_ls": {
+			"command": "~/binaries/servers/elixir/release/language_server.bat",
+			"rootPatterns": ["mix.exs"],
+			"filetypes": ["elixir"]
 		}
 	},
+
 	"java.import.maven.enabled": true,
 	"java.completion.overwrite": false,
 	"java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:c:/Users/evang/binaries/lombok.jar -Xbootclasspath/a:c:/Users/evang/binaries/lombok.jar",
