@@ -1,7 +1,9 @@
 call plug#begin('~/AppData/Local/nvim/plugged')
 
 " Themes
-Plug 'trevordmiller/nova-vim'
+Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 " Statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -11,11 +13,11 @@ Plug 'https://github.com/tpope/vim-vinegar.git'
 Plug 'https://github.com/tpope/vim-projectionist.git'
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
+Plug 'tpope/vim-surround'
 " Fuzzy Everything
 Plug 'Shougo/denite.nvim'
-" Wrap text
 Plug 'tpope/vim-surround'
 " LSP
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
