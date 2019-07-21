@@ -4,6 +4,8 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
+Plug 'trevordmiller/nova-vim'
+Plug 'icymind/NeoSolarized'
 " Statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -11,6 +13,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/tpope/vim-vinegar.git'
 " File switcher test <-> source
 Plug 'https://github.com/tpope/vim-projectionist.git'
+Plug 'airblade/vim-rooter'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'

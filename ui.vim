@@ -1,5 +1,5 @@
 " Feel Configurtion
-colorscheme gruvbox
+colorscheme nord
 " windows font configuration (because of spaces)
 set guifont=Iosevka:h12
 " hybrid line numbers
