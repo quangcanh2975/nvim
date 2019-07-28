@@ -1,0 +1,5 @@
+{
+  "./*/src/main/java/*.java": {"alternate": "./{}/src/test/java/{}.java", "type": "source"},
+  "./*/src/test/java/*.java": {"alternate": "./{}/src/main/java/{}.java", "type": "test"},
+  "./*/src/main/resources/*": { "type": "resource" }
+}
