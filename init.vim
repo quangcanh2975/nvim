@@ -1,31 +1,4 @@
-" Entry point for nvim configuration
-" here lies sourcing other files that contains speciffic configuration,
-" and others utilities that is used.
-" DONT fonrget to install https://github.com/junegunn/vim-plug
-" Map leader
-
-let mapleader = ","
-
-" Better clipboard support on Windows/Magic?
-set clipboard^=unnamed
-
-let g:python3_host_prog='C:/Users/evang/AppData/Local/Programs/Python/Python37/python.exe'
-
-nnoremap <silent> <cr> :noh<CR><CR>
-" x now goes to black hole
-nnoremap x "_x
-
-command! OpenSettings call <SID>openSettings()
-function! s:openSettings()
-	if has('win64')
-		e ~/AppData/Local/nvim
-	else
-		e ~/.config/nvim
-	endif
-endfunction
-
-call plug#begin('~/AppData/Local/nvim/plugged')
-
+call plug#begin('~/.local/share/nvim/plugged')
 " Themes
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
@@ -56,4 +29,31 @@ Plug 'sheerun/vim-polyglot'
 " Editor Config
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
+
+" Entry point for nvim configuration
+" here lies sourcing other files that contains speciffic configuration,
+" and others utilities that is used.
+" DONT fonrget to install https://github.com/junegunn/vim-plug
+" Map leader
+
+let mapleader = ","
+
+" Better clipboard support on Windows/Magic?
+set clipboard^=unnamed
+
+let g:python3_host_prog='/home/sleepiejohn/.asdf/shims/python3'
+
+nnoremap <silent> <cr> :noh<CR><CR>
+" x now goes to black hole
+nnoremap x "_x
+
+command! OpenSettings call <SID>openSettings()
+function! s:openSettings()
+	if has('win64')
+		e ~/AppData/Local/nvim
+	else
+		e ~/.config/nvim
+	endif
+endfunction
+
 
