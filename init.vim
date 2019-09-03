@@ -23,7 +23,7 @@ Plug 'tpope/vim-surround'
 Plug 'Shougo/denite.nvim'
 Plug 'tpope/vim-surround'
 " LSP
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Langauges
 Plug 'sheerun/vim-polyglot'
 Plug 'dart-lang/dart-vim-plugin'
