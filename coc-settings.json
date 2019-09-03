@@ -14,9 +14,19 @@
 			"command": "~/binaries/servers/elixir/release/language_server.bat",
 			"rootPatterns": ["mix.exs"],
 			"filetypes": ["elixir"]
+		},
+		"dart": {
+			"command": "dart",
+			"args": [
+				"/home/sleepiejohn/.asdf/installs/dart/2.4.1/dart-sdk/bin/snapshots/analysis_server.dart.snapshot",
+				"--lsp"
+			],
+			"rootPatterns": ["pubspec.yaml"],
+			"filetypes": ["dart"],
+			"disableDynamicRegister": true,
+			"trace.server": "verbose"
 		}
 	},
-
 	"java.import.maven.enabled": true,
 	"java.completion.overwrite": false,
 	"java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:c:/Users/evang/binaries/lombok.jar -Xbootclasspath/a:c:/Users/evang/binaries/lombok.jar",
