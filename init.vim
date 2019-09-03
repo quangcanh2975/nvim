@@ -26,8 +26,10 @@ Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 " Langauges
 Plug 'sheerun/vim-polyglot'
+Plug 'dart-lang/dart-vim-plugin'
 " Editor Config
 Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Entry point for nvim configuration
