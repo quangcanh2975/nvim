@@ -20,7 +20,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-surround'
 " Fuzzy Everything
-Plug 'Shougo/denite.nvim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 Plug 'tpope/vim-surround'
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
