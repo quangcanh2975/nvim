@@ -1,0 +1,51 @@
+" options and mappings that are supported by both Vim and IdeaVim
+set nu
+set number
+set ignorecase
+set smartcase
+
+" copy to clipboard
+set clipboard=unnamedplus
+
+" Map leader key
+let mapleader = "," " map leader key to ,
+let g:mapleader = ","
+
+
+if has('ide')
+  " mappings and options that exist only in IdeaVim
+  map <leader>f <Action>(GotoFile)
+  map <leader>g <Action>(FindInPath)
+  map <leader>b <Action>(Switcher)
+
+  if &ide =~? 'intellij idea'
+    if &ide =~? 'community'
+      " some mappings and options for IntelliJ IDEA Community Edition
+    elseif &ide =~? 'ultimate'
+      " some mappings and options for IntelliJ IDEA Ultimate Edition
+    endif
+  elseif &ide =~? 'pycharm'
+    " PyCharm specific mappings and options
+  endif
+else
+  " some mappings for Vim/Neovim
+  nnoremap <leader>f <cmd>Telescope find_files<cr>
+endif
+" Move by word
+nnoremap L l
+nnoremap H h
+nnoremap l w
+nnoremap h b
+
+" Fast saving
+nmap <leader>w :w!<cr>
+" Quick exiting
+nmap <leader>q :q<cr>
+map fj <C-w>j
+map fl <C-l>l
+map fh <C-h>h
+map fk <C-k>k
+" Map Esc to jj
+:imap jj <Esc>
+vim.opt.incsearch = true
+set clipboard+=ideaput
